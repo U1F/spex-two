@@ -1,0 +1,71 @@
+body {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+#burger {
+  background-color: #000;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+#menu {
+  background-color: #ddd;
+  display: none;
+}
+
+#app {
+  background-color: green;
+  height: 200vh;
+}
+
+#main {
+  background-color: white;
+}
+
+#sidebar-slash-footer {
+  background-color: #ddd;
+}
+
+#primary {
+  background-color: antiquewhite;
+  min-height: 300px;
+}
+
+#secondary {
+  background-color: blanchedalmond;
+  min-height: 300px;
+}
+
+#additional {
+  background-color: cornsilk;
+  min-height: 300px;
+}
+
+#misc {
+  background-color: darkseagreen;
+  min-height: 300px;
+}
+
+@media (min-width: 768px) {
+}
+
+/* Decent computer display: Menu Left + Sections Side-By-Side */
+@media (min-width: 1440px) {
+  body {
+    flex-direction: row;
+  }
+  #menu {
+    display: block;
+    width: 300px;
+  }
+  #burger {
+    display: none;
+  }
+  #app {
+    flex: 1;
+  }
+}
