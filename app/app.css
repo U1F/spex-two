@@ -4,13 +4,15 @@
   --font-medium: 1em;
   --font-large: 1.5em;
   --font-xlarge: 2em;
-  --color-bg: #f7f5f9;
+  --color-bg: hsl(270, 25%, 97%);
 
   --gap-big: 2em;
 }
 /* STYLES */
 .soft-shadow {
-  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  border-radius: 2em;
+  box-shadow: 3px 3px 40px 10px hsla(270, 50%, 85%, 0.3);
 }
 
 /* LAYOUT AND RESPONSIVE */
@@ -24,7 +26,6 @@ body {
 
   font-size: var(--font-medium);
 
-  background-color: thistle;
 }
 
 
@@ -52,35 +53,6 @@ body {
 #menu {
 
   display: none;
-}
-
-#sidebar-slash-footer {
-
-  min-height: 300px;
-}
-
-#header {
-  min-height: 30px;
-
-}
-#primary {
-  min-height: 300px;
-
-}
-
-#secondary {
-  min-height: 300px;
-
-}
-
-#additional {
-  min-height: 300px;
-
-}
-
-#misc {
-  min-height: 300px;
-
 }
 
 @media (min-width: 768px) {
