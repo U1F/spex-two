@@ -48,10 +48,16 @@ body {
 }
 
 #burger {
-  position: sticky;
+  position:fixed; 
+  font-size: 8vw;
+  right: 0;
   top: 0;
+  padding: 2vw;
 }
 
+#burger i {
+  font-style: normal;
+}
 #menu {
   display: none;
   padding: var(--gap-big);
