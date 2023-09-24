@@ -5,9 +5,18 @@
   --font-large: 1.5em;
   --font-xlarge: 2em;
   --color-bg: hsl(270, 25%, 97%);
-
   --gap-big: 2em;
 }
+body > * {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* STYLES */
 .soft-shadow {
   padding: 2em;
@@ -16,18 +25,14 @@
 }
 
 /* LAYOUT AND RESPONSIVE */
-body {
-  margin: 0;
-  padding: 0;
 
+body {
   display: flex;
   flex-direction: column;
   gap: var(--gap-big);
 
   font-size: var(--font-medium);
-
 }
-
 
 #app {
   display: flex;
@@ -40,19 +45,53 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--gap-big);
-
 }
 
-
 #burger {
-
   position: sticky;
   top: 0;
 }
 
 #menu {
-
   display: none;
+  padding: var(--gap-big);
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  border-left: 0.5ch solid transparent;
+  display: flex;
+  gap: 1em;
+  padding: 0.5em 1em;
+
+  cursor: pointer;
+}
+
+.list-item:active,
+.list-item:hover {
+  border-left: 0.5ch solid hsl(268, 100%, 87%);
+  background-color: hsl(270, 100%, 97%);
+}
+
+.list-item i {
+  font-style: normal;
+}
+
+.list-spacer {
+  padding: 1em;
 }
 
 @media (min-width: 768px) {
@@ -65,7 +104,7 @@ body {
   }
   #menu {
     position: sticky;
-    display: block;
+    display: flex;
     width: 300px;
     top: 0;
     bottom: 0;
