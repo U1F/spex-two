@@ -6,9 +6,10 @@ async function updateClock() {
 
 setInterval(updateClock, 1000);
 
-burger = document.getElementById("burger");
-menu = document.getElementById("menu");
-app = document.getElementById("app");
+const burger = document.getElementById("burger");
+const menu = document.getElementById("menu");
+const app = document.getElementById("app");
+
 burger.addEventListener("click", () => {
   if (menu.style.display === "none") {
     menu.style.display = "flex";
